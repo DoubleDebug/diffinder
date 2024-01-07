@@ -7,7 +7,9 @@ type DifferenceMetadata = {
   }>;
 };
 
-type Position = {
+type CircleData = {
+  id: number;
   top: string;
   left: string;
+  shown: boolean;
 };

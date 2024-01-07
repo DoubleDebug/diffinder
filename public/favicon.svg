@@ -1,0 +1,20 @@
+<svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve">
+ <desc>Created with Fabric.js 5.2.4</desc>
+
+ <g>
+  <title>Layer 1</title>
+  <g transform="matrix(0.659953 0 0 0.660865 540 568.5)" id="5dae5391-b020-4095-bd70-5b8599aeb637">
+   <rect vector-effect="non-scaling-stroke" x="-540" y="-540" width="1080" height="1080" stroke=" none" stroke-dasharray=" none" stroke-linecap=" butt" stroke-dashoffset="0" stroke-linejoin=" miter" stroke-miterlimit="4" fill=" rgb(255,255,255)" fill-rule=" nonzero" id="svg_1"/>
+  </g>
+  <g transform="matrix(1 0 0 1 540 540)" id="bfd417c7-23c7-430d-adc2-5c7f63ef2f4b"/>
+  <g transform="matrix(14.6897 0 0 14.6897 718.348 388.725)" id="72b7a9ba-b625-4e8b-885d-ca0d08e7e74f">
+   <circle vector-effect="non-scaling-stroke" cx="-12.11158" cy="10.41087" r="35" stroke=" rgb(0,0,0)" stroke-width="0" stroke-dasharray=" none" stroke-linecap=" butt" stroke-dashoffset="0" stroke-linejoin=" miter" stroke-miterlimit="4" fill=" rgb(26,86,219)" fill-rule=" nonzero" id="svg_2"/>
+  </g>
+  <g transform="matrix(1.19067 0 0 1.19067 574.58 493.686)" id="6fb41e03-7a19-4455-9b8d-3fcbcbaae5fb">
+   <path vector-effect="non-scaling-stroke" d="m10.71074,-205.6886c0,-17.7 -14.3,-32 -32,-32c-17.7,0 -32,14.3 -32,32l0,112l-112,0c-17.7,0 -32,14.3 -32,32c0,17.7 14.3,32 32,32l112,0l0,112c0,17.7 14.3,32 32,32c17.7,0 32,-14.3 32,-32l0,-112l112,0c17.7,0 32,-14.3 32,-32c0,-17.7 -14.3,-32 -32,-32l-112,0l0,-112zm-224,448c0,17.7 14.3,32 32,32l320,0c17.7,0 32,-14.3 32,-32c0,-17.7 -14.3,-32 -32,-32l-320,0c-17.7,0 -32,14.3 -32,32z" stroke-linecap=" butt" stroke=" rgb(0,0,0)" stroke-width="0" stroke-dasharray=" none" stroke-dashoffset="0" stroke-linejoin=" miter" stroke-miterlimit="4" fill=" rgb(255,255,255)" fill-rule=" nonzero" id="svg_3"/>
+  </g>
+  <g id="svg_4">
+   <g id="svg_5"/>
+  </g>
+ </g>
+</svg>
