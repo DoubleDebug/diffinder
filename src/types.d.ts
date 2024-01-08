@@ -1,4 +1,5 @@
 type DifferenceMetadata = {
+  name: string;
   "image-left": string;
   "image-right": string;
   differences: Array<{

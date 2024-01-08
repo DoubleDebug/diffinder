@@ -1,5 +1,4 @@
 import { For, createMemo } from "solid-js";
-import styles from "./SingleImage.module.css";
 import {
   circleSize,
   circles,
@@ -41,10 +40,10 @@ const SingleImage = (props: Props) => {
   });
 
   return (
-    <div class={styles.container}>
+    <div class="flex relative max-w-full">
       <img
         ref={imageRef}
-        class={styles.image}
+        class="flex max-w-full"
         src={src()}
         onClick={() => setMistakes((prev) => prev + 1)}
       />
@@ -59,7 +58,7 @@ const SingleImage = (props: Props) => {
           };
           return (
             <div
-              class={styles.circle}
+              class="flex w-[20px] h-[20px] border-2 border-white border-solid rounded-full absolute z-10"
               onClick={onClick}
               style={circleStyle(circle)}
             />
