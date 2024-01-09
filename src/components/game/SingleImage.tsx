@@ -32,7 +32,7 @@ const SingleImage = (props: Props) => {
   };
   const src = createMemo(() => {
     const side = props.left ? 'left' : 'right';
-    return `images/${props.data[`image-${side}`]}`;
+    return `/images/${props.data[`image-${side}`]}`;
   });
   const handleClick = (event: MouseEvent) => {
     createRipple(
@@ -59,6 +59,7 @@ const SingleImage = (props: Props) => {
         ref={imageRef}
         class="flex max-w-full"
         src={src()}
+        alt={props.data.name}
         onClick={() => setMistakes((prev) => prev + 1)}
       />
       <For each={circles()}>

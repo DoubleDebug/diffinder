@@ -1,0 +1,23 @@
+{
+  "name": "AI Robots",
+  "image-left": "ai-robots-1.webp",
+  "image-right": "ai-robots-2.webp",
+  "differences": [
+    {
+      "x": 344,
+      "y": 1014
+    },
+    {
+      "x": 942,
+      "y": 600
+    },
+    {
+      "x": 720,
+      "y": 583
+    },
+    {
+      "x": 325,
+      "y": 278
+    }
+  ]
+}

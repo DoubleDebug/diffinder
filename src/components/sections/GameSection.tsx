@@ -1,6 +1,10 @@
-import Game from "../game/Game";
+import { useParams } from '@solidjs/router';
+import Game from '../game/Game';
+import { getGame } from '../game/GameLibrary';
 
 const GameSection = () => {
+  const { id } = useParams();
+  const gameData = getGame(Number(id));
   return (
     <section class="bg-white dark:bg-gray-900">
       <div class="py-4 px-4 mx-auto max-w-screen-xl lg:px-6">
@@ -13,7 +17,7 @@ const GameSection = () => {
             <br />3 mistakes and you're out!
           </p>
         </div>
-        <Game />
+        <Game data={gameData} />
       </div>
     </section>
   );

@@ -32,8 +32,8 @@ const CTASection = () => {
           </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
-          <img src="/images/image-1.png" />
-          <img src="/images/image-2.png" />
+          <img src="/images/library-bookshelf-1.webp" />
+          <img src="/images/library-bookshelf-2.webp" />
         </div>
       </div>
     </section>

@@ -1,0 +1,27 @@
+{
+  "name": "Chalet mountains",
+  "image-left": "chalet-mountains-1.webp",
+  "image-right": "chalet-mountains-2.webp",
+  "differences": [
+    {
+      "x": 1880,
+      "y": 987
+    },
+    {
+      "x": 1324,
+      "y": 698
+    },
+    {
+      "x": 674,
+      "y": 715
+    },
+    {
+      "x": 395,
+      "y": 734
+    },
+    {
+      "x": 1658,
+      "y": 314
+    }
+  ]
+}

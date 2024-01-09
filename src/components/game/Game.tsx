@@ -1,11 +1,14 @@
-import { game1 } from "./GameLibrary";
-import ImageDifference from "./ImageDifference";
+import ImageDifference from './ImageDifference';
 
-const Game = () => {
+type Props = {
+  data: DifferenceMetadata;
+};
+
+const Game = (props: Props) => {
   return (
     <div class="dark:bg-gray-900 flex justify-center items-center">
       <div class="max-w-[2000px]">
-        <ImageDifference {...game1} />
+        <ImageDifference {...props.data} />
       </div>
     </div>
   );
