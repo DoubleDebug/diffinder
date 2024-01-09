@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ripple {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  scale: 0;
+  animation: ripple 0.6s linear;
+}
+
+.ripple.mistake {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.ripple.success {
+  color: green;
+  background-color: rgba(94, 255, 0, 0.5);
+}
+
+@keyframes ripple {
+  to {
+    scale: 4;
+    opacity: 0;
+  }
+}
