@@ -1,0 +1,27 @@
+{
+  "name": "Traditional people",
+  "image-left": "traditional-people-1.webp",
+  "image-right": "traditional-people-2.webp",
+  "differences": [
+    {
+      "x": 1081,
+      "y": 148
+    },
+    {
+      "x": 641,
+      "y": 277
+    },
+    {
+      "x": 348,
+      "y": 1117
+    },
+    {
+      "x": 1173,
+      "y": 1152
+    },
+    {
+      "x": 266,
+      "y": 457
+    }
+  ]
+}

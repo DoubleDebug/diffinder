@@ -1,11 +1,12 @@
 import { For, createMemo } from 'solid-js';
+import { createRipple } from '../../utils/animations';
 import {
+  setCircles,
   circleSize,
   circles,
-  setCircles,
-  setMistakes,
-} from './ImageDifference';
-import { createRipple } from '../../utils/animations';
+  setMistakesLeft,
+  setDifferencesLeft,
+} from '../sections/GameSection';
 
 type Props = {
   data: DifferenceMetadata;
@@ -44,6 +45,7 @@ const SingleImage = (props: Props) => {
   };
   const circleStyle = (circle: CircleData) => ({
     width: `${circleSize()}px`,
+    height: `${circleSize()}px`,
     top: circle.top,
     left: circle.left,
     'border-width': circle.shown ? '2px' : '0px',
@@ -60,7 +62,7 @@ const SingleImage = (props: Props) => {
         class="flex max-w-full"
         src={src()}
         alt={props.data.name}
-        onClick={() => setMistakes((prev) => prev + 1)}
+        onClick={() => setMistakesLeft((prev) => prev - 1)}
       />
       <For each={circles()}>
         {(circle, index) => {
@@ -74,6 +76,7 @@ const SingleImage = (props: Props) => {
               copy[index()] = { ...circle, shown: true };
               return copy;
             });
+            setDifferencesLeft((prev) => prev - 1);
             createRipple(
               containerRef as HTMLDivElement,
               event.clientX,
@@ -81,7 +84,7 @@ const SingleImage = (props: Props) => {
               'success'
             );
           };
-          const size = `${circleSize()}px`;
+          const size = `${circleSize()}px` as const;
           return (
             <div
               class={`flex w-[${size}] h-[${size}] border-2 border-white border-solid rounded-full absolute z-10`}

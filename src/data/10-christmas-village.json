@@ -1,0 +1,39 @@
+{
+  "name": "Christmas village",
+  "image-left": "christmas-village-1.webp",
+  "image-right": "christmas-village-2.webp",
+  "differences": [
+    {
+      "x": 41,
+      "y": 433
+    },
+    {
+      "x": 427,
+      "y": 473
+    },
+    {
+      "x": 824,
+      "y": 187
+    },
+    {
+      "x": 1108,
+      "y": 118
+    },
+    {
+      "x": 1000,
+      "y": 486
+    },
+    {
+      "x": 897,
+      "y": 658
+    },
+    {
+      "x": 252,
+      "y": 936
+    },
+    {
+      "x": 1284,
+      "y": 896
+    }
+  ]
+}
