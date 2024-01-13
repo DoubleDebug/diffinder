@@ -6,7 +6,7 @@ import {
   circles,
   setMistakesLeft,
   setDifferencesLeft,
-} from '../sections/GameSection';
+} from '../../state/game';
 
 type Props = {
   data: DifferenceMetadata;
