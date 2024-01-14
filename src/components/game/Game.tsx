@@ -1,9 +1,8 @@
-import ImageDifference from './ImageDifference';
-import { Modal } from 'flowbite';
 import { createEffect } from 'solid-js';
-import { MODALS } from '../../utils/modals';
 import { mistakesLeft } from '../../state/game';
-import Result from './Result';
+import { resultModal } from '../../state/modals';
+import Result from '../modals/Result';
+import ImageDifference from './ImageDifference';
 
 type Props = {
   data: DifferenceMetadata;
@@ -12,8 +11,7 @@ type Props = {
 const Game = (props: Props) => {
   createEffect(() => {
     if (mistakesLeft() === 0) {
-      const resultModal = new Modal(document.getElementById(MODALS.RESULTS));
-      resultModal.show();
+      resultModal()?.show();
     }
   });
 
