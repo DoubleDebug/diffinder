@@ -6,7 +6,7 @@ const DrawerFeedback = () => {
   return (
     <div
       id="drawer-feedback"
-      class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
+      class="flex flex-col fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
       tabindex="-1"
       data-drawer-placement="right"
       aria-labelledby="drawer-contact-label"
@@ -52,7 +52,7 @@ const DrawerFeedback = () => {
       {getResult() === null && <FeedbackForm />}
       {getResult() === true && <Success />}
       {getResult() === false && <Failure />}
-      <p class="mb-2 text-center text-sm dark:text-gray-400">
+      <p class="mt-auto mb-2 text-center text-sm dark:text-gray-400">
         Contact me on social media if you have additional comments!
       </p>
       <div class="flex justify-center gap-2">
