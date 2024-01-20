@@ -26,9 +26,21 @@ body {
   background-color: rgba(94, 255, 0, 0.5);
 }
 
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
 @keyframes ripple {
   to {
     scale: 4;
     opacity: 0;
+  }
+}
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
   }
 }

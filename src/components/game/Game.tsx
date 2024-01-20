@@ -1,7 +1,7 @@
 import { createEffect } from 'solid-js';
 import { mistakesLeft } from '../../state/game';
 import { resultModal } from '../../state/modals';
-import Result from '../modals/Result';
+import GameResult from '../modals/GameResult';
 import ImageDifference from './ImageDifference';
 
 type Props = {
@@ -19,7 +19,7 @@ const Game = (props: Props) => {
     <div class="dark:bg-gray-900 flex justify-center items-center">
       <div class="max-w-[2000px]">
         <ImageDifference {...props.data} />
-        <Result />
+        <GameResult />
       </div>
     </div>
   );

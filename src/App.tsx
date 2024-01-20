@@ -1,7 +1,7 @@
 import 'flowbite';
 import { Route, Router } from '@solidjs/router';
 import GameSection from './components/sections/GameSection';
-import DrawerFeedback from './components/navigation/DrawerFeedback';
+import DrawerFeedback from './components/navigation/feedback/DrawerFeedback';
 import DrawerHowToPlay from './components/navigation/DrawerHowToPlay';
 import Navbar from './components/navigation/Navbar';
 import ImageGridSection from './components/sections/ImageGridSection';

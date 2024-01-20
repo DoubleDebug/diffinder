@@ -1,7 +1,7 @@
 type DifferenceMetadata = {
   name: string;
-  "image-left": string;
-  "image-right": string;
+  'image-left': string;
+  'image-right': string;
   differences: Array<{
     x: number;
     y: number;
@@ -13,4 +13,10 @@ type CircleData = {
   top: string;
   left: string;
   shown: boolean;
+};
+
+type ContactFormData = {
+  name: string;
+  message: string;
+  rating: number;
 };

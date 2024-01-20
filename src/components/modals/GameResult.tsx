@@ -4,7 +4,7 @@ import { MODALS } from '../../utils/modals';
 import { Modal } from 'flowbite';
 import { setResultModal } from '../../state/modals';
 
-const Result = () => {
+const GameResult = () => {
   onMount(() => {
     const modal = new Modal(document.getElementById(MODALS.RESULTS));
     setResultModal(modal);
@@ -88,4 +88,4 @@ const Result = () => {
   );
 };
 
-export default Result;
+export default GameResult;
