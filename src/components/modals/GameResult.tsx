@@ -2,6 +2,7 @@ import { Modal } from 'flowbite';
 import { MODALS } from '../../utils/modals';
 import { useParams } from '@solidjs/router';
 import { createMemo, onMount } from 'solid-js';
+import { formatSeconds } from '../../utils/time';
 import { setResultModal } from '../../state/modals';
 import {
   differencesLeft,
@@ -9,6 +10,7 @@ import {
   mistakesLeft,
   numOfMistakes,
   resetGame,
+  secondsLeft,
 } from '../../state/game';
 
 const GameResult = () => {
@@ -93,7 +95,7 @@ const GameResult = () => {
                   </span>
                 </div>
                 <span class="self-center text-2xl" title="Time elapsed">
-                  02:00
+                  {formatSeconds(secondsLeft())}
                 </span>
               </div>
               <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">

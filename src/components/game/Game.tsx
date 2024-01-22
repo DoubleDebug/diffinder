@@ -1,17 +1,28 @@
-import { createEffect } from 'solid-js';
-import { differencesLeft, mistakesLeft } from '../../state/game';
-import { resultModal } from '../../state/modals';
 import GameResult from '../modals/GameResult';
 import ImageDifference from './ImageDifference';
+import { resultModal } from '../../state/modals';
+import { createEffect, onMount } from 'solid-js';
+import { GameController } from '../../state/controller';
+import { differencesLeft, mistakesLeft, secondsLeft } from '../../state/game';
 
 type Props = {
   data: DifferenceMetadata;
 };
 
 const Game = (props: Props) => {
+  onMount(() => {
+    GameController.startCountdown();
+    return () => GameController.stopCountdown();
+  });
+
   createEffect(() => {
-    if (mistakesLeft() === 0 || differencesLeft() === 0) {
+    if (
+      mistakesLeft() === 0 ||
+      differencesLeft() === 0 ||
+      secondsLeft() === 0
+    ) {
       resultModal()?.show();
+      GameController.stopCountdown();
     }
   });
 

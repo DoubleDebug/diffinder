@@ -2,11 +2,13 @@ import Game from '../game/Game';
 import { onMount } from 'solid-js';
 import { useParams } from '@solidjs/router';
 import { getGame } from '../game/GameLibrary';
+import { formatSeconds } from '../../utils/time';
 import {
   setDifferencesLeft,
   differencesLeft,
   mistakesLeft,
   setGame,
+  secondsLeft,
 } from '../../state/game';
 
 const GameSection = () => {
@@ -31,13 +33,18 @@ const GameSection = () => {
               mistakes and you're out!
             </p>
           </div>
-          <div class="flex gap-2 h-min self-end">
-            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-              {differencesLeft()} differences
-            </span>
-            <span class="bg-red-100 text-red-800 text-sm font-medium px-4 py-1 rounded dark:bg-red-900 dark:text-red-300">
-              {mistakesLeft()} mistakes
-            </span>
+          <div class="grid gap-2">
+            <p class="text-4xl text-white text-right">
+              {formatSeconds(secondsLeft())}
+            </p>
+            <div class="flex gap-2 h-min self-end">
+              <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
+                {differencesLeft()} differences
+              </span>
+              <span class="bg-red-100 text-red-800 text-sm font-medium px-4 py-1 rounded dark:bg-red-900 dark:text-red-300">
+                {mistakesLeft()} mistakes
+              </span>
+            </div>
           </div>
         </div>
         <Game data={gameData} />
