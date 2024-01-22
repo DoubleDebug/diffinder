@@ -1,5 +1,5 @@
 import { createEffect } from 'solid-js';
-import { mistakesLeft } from '../../state/game';
+import { differencesLeft, mistakesLeft } from '../../state/game';
 import { resultModal } from '../../state/modals';
 import GameResult from '../modals/GameResult';
 import ImageDifference from './ImageDifference';
@@ -10,7 +10,7 @@ type Props = {
 
 const Game = (props: Props) => {
   createEffect(() => {
-    if (mistakesLeft() === 0) {
+    if (mistakesLeft() === 0 || differencesLeft() === 0) {
       resultModal()?.show();
     }
   });

@@ -62,7 +62,7 @@ const SingleImage = (props: Props) => {
         class="flex max-w-full"
         src={src()}
         alt={props.data.name}
-        onClick={() => setMistakesLeft((prev) => prev - 1)}
+        onClick={() => setMistakesLeft((prev) => Math.max(prev - 1, 0))}
       />
       <For each={circles()}>
         {(circle, index) => {
