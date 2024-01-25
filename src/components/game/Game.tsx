@@ -1,7 +1,7 @@
 import GameResult from '../modals/GameResult';
 import ImageDifference from './ImageDifference';
 import { resultModal } from '../../state/modals';
-import { createEffect, onMount } from 'solid-js';
+import { createEffect, onCleanup, onMount } from 'solid-js';
 import { GameController } from '../../state/controller';
 import { differencesLeft, mistakesLeft, secondsLeft } from '../../state/game';
 
@@ -10,10 +10,8 @@ type Props = {
 };
 
 const Game = (props: Props) => {
-  onMount(() => {
-    GameController.startCountdown();
-    return () => GameController.stopCountdown();
-  });
+  onMount(() => GameController.startCountdown());
+  onCleanup(() => GameController.stopCountdown());
 
   createEffect(() => {
     if (

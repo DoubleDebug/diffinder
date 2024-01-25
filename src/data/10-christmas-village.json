@@ -1,7 +1,9 @@
 {
+  "id": 10,
   "name": "Christmas village",
   "image-left": "christmas-village-1.webp",
   "image-right": "christmas-village-2.webp",
+  "order": 3,
   "differences": [
     {
       "x": 41,

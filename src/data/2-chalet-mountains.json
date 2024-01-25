@@ -1,7 +1,9 @@
 {
+  "id": 2,
   "name": "Chalet mountains",
   "image-left": "chalet-mountains-1.webp",
   "image-right": "chalet-mountains-2.webp",
+  "order": 1,
   "differences": [
     {
       "x": 1880,

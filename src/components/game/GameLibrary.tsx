@@ -36,4 +36,19 @@ export function getGame(index: number): DifferenceMetadata {
   }
 }
 
-export { game1, game2, game3 };
+export function getAllGames(): DifferenceMetadata[] {
+  const games = [
+    game1,
+    game2,
+    game3,
+    game4,
+    game5,
+    game6,
+    game7,
+    game8,
+    game9,
+    game10,
+  ];
+  games.sort((a, b) => b.order - a.order);
+  return games;
+}

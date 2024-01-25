@@ -1,7 +1,9 @@
 {
+  "id": 8,
   "name": "Crater",
   "image-left": "crater-1.webp",
   "image-right": "crater-2.webp",
+  "order": 6,
   "differences": [
     {
       "x": 689,

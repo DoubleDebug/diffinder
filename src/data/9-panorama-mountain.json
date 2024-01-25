@@ -1,7 +1,9 @@
 {
+  "id": 9,
   "name": "Panorama moutains",
   "image-left": "panorama-mountains-1.webp",
   "image-right": "panorama-mountains-2.webp",
+  "order": 3,
   "differences": [
     {
       "x": 516,

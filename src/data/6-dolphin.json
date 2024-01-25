@@ -1,7 +1,9 @@
 {
+  "id": 6,
   "name": "Dolphin",
   "image-left": "dolphin-1.webp",
   "image-right": "dolphin-2.webp",
+  "order": 6,
   "differences": [
     {
       "x": 213,

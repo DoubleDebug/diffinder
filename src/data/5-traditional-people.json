@@ -1,7 +1,9 @@
 {
+  "id": 5,
   "name": "Traditional people",
   "image-left": "traditional-people-1.webp",
   "image-right": "traditional-people-2.webp",
+  "order": 5,
   "differences": [
     {
       "x": 1081,

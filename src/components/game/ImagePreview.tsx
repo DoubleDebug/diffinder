@@ -1,14 +1,12 @@
-import { getGame } from './GameLibrary';
-
 type Props = {
-  index: number;
+  data: DifferenceMetadata;
 };
 
 const ImagePreview = (props: Props) => {
-  const data = getGame(props.index);
+  const { data } = props;
   return (
     <div class="flex flex-col items-center">
-      <a href={`/games/${props.index}`} class="cursor-pointer">
+      <a href={`/games/${props.data.id}`} class="cursor-pointer">
         <img
           class="object-contain h-[250px] mb-2"
           src={`/images/${data['image-left']}`}

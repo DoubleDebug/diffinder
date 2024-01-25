@@ -1,7 +1,9 @@
 {
+  "id": 3,
   "name": "AI Robots",
   "image-left": "ai-robots-1.webp",
   "image-right": "ai-robots-2.webp",
+  "order": 4,
   "differences": [
     {
       "x": 344,

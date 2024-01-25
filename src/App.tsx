@@ -15,15 +15,7 @@ function App() {
       <DrawerHowToPlay />
       <DrawerFeedback />
       <Router>
-        <Route
-          path="/"
-          component={() => (
-            <>
-              <CTASection />
-              <ImageGridSection />
-            </>
-          )}
-        />
+        <Route path="/" component={CTASection} />
         <Route path="/games" component={ImageGridSection} />
         <Route path="/games/:id" component={GameSection} />
       </Router>
