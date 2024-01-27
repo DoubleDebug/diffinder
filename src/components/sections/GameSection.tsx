@@ -9,6 +9,7 @@ import {
   mistakesLeft,
   setGame,
   secondsLeft,
+  numOfMistakes,
 } from '../../state/game';
 
 const GameSection = () => {
@@ -39,10 +40,11 @@ const GameSection = () => {
             </p>
             <div class="flex gap-2 h-min self-end">
               <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                {differencesLeft()} differences
+                {gameData.differences.length - differencesLeft()} /{' '}
+                {gameData.differences.length} differences
               </span>
               <span class="bg-red-100 text-red-800 text-sm font-medium px-4 py-1 rounded dark:bg-red-900 dark:text-red-300">
-                {mistakesLeft()} mistakes
+                {numOfMistakes() - mistakesLeft()} / {numOfMistakes()} mistakes
               </span>
             </div>
           </div>

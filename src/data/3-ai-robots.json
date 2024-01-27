@@ -3,15 +3,16 @@
   "name": "AI Robots",
   "image-left": "ai-robots-1.webp",
   "image-right": "ai-robots-2.webp",
-  "order": 4,
+  "order": 40,
+  "difficulty": "medium",
   "differences": [
     {
       "x": 344,
       "y": 1014
     },
     {
-      "x": 942,
-      "y": 600
+      "x": 831,
+      "y": 1015
     },
     {
       "x": 720,

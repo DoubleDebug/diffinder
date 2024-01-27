@@ -3,7 +3,8 @@
   "name": "Library bookshelf",
   "image-left": "library-bookshelf-1.webp",
   "image-right": "library-bookshelf-2.webp",
-  "order": 1,
+  "difficulty": "medium",
+  "order": 10,
   "differences": [
     {
       "x": 2035,
@@ -12,10 +13,6 @@
     {
       "x": 890,
       "y": 2193
-    },
-    {
-      "x": 1270,
-      "y": 1979
     },
     {
       "x": 2303,

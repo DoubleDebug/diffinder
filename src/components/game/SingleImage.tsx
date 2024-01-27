@@ -48,7 +48,7 @@ const SingleImage = (props: Props) => {
     height: `${circleSize()}px`,
     top: circle.top,
     left: circle.left,
-    'border-width': circle.shown ? '2px' : '0px',
+    'border-width': circle.shown ? '3px' : '0px',
   });
 
   return (

@@ -3,7 +3,8 @@
   "name": "Chalet mountains",
   "image-left": "chalet-mountains-1.webp",
   "image-right": "chalet-mountains-2.webp",
-  "order": 1,
+  "difficulty": "hard",
+  "order": 10,
   "differences": [
     {
       "x": 1880,
@@ -22,8 +23,8 @@
       "y": 734
     },
     {
-      "x": 1658,
-      "y": 314
+      "x": 1048,
+      "y": 325
     }
   ]
 }

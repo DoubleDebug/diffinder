@@ -3,7 +3,8 @@
   "name": "Traditional people",
   "image-left": "traditional-people-1.webp",
   "image-right": "traditional-people-2.webp",
-  "order": 5,
+  "order": 50,
+  "difficulty": "medium",
   "differences": [
     {
       "x": 1081,
@@ -18,12 +19,12 @@
       "y": 1117
     },
     {
-      "x": 1173,
-      "y": 1152
+      "x": 1191,
+      "y": 1145
     },
     {
-      "x": 266,
-      "y": 457
+      "x": 468,
+      "y": 536
     }
   ]
 }

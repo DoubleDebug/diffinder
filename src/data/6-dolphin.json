@@ -3,27 +3,28 @@
   "name": "Dolphin",
   "image-left": "dolphin-1.webp",
   "image-right": "dolphin-2.webp",
-  "order": 6,
+  "order": 60,
+  "difficulty": "medium",
   "differences": [
     {
-      "x": 213,
-      "y": 331
+      "x": 340,
+      "y": 605
     },
     {
-      "x": 370,
-      "y": 746
+      "x": 545,
+      "y": 659
     },
     {
-      "x": 747,
-      "y": 586
+      "x": 543,
+      "y": 1007
     },
     {
-      "x": 924,
-      "y": 784
+      "x": 1095,
+      "y": 609
     },
     {
-      "x": 374,
-      "y": 909
+      "x": 510,
+      "y": 33
     }
   ]
 }

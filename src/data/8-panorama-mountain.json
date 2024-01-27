@@ -1,0 +1,42 @@
+{
+  "id": 8,
+  "name": "Panorama moutains",
+  "image-left": "panorama-mountains-1.webp",
+  "image-right": "panorama-mountains-2.webp",
+  "order": 30,
+  "difficulty": "hard",
+  "differences": [
+    {
+      "x": 762,
+      "y": 290
+    },
+    {
+      "x": 633,
+      "y": 492
+    },
+    {
+      "x": 604,
+      "y": 804
+    },
+    {
+      "x": 211,
+      "y": 461
+    },
+    {
+      "x": 366,
+      "y": 955
+    },
+    {
+      "x": 799,
+      "y": 1158
+    },
+    {
+      "x": 569,
+      "y": 1421
+    },
+    {
+      "x": 1045,
+      "y": 1499
+    }
+  ]
+}

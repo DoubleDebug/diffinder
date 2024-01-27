@@ -1,0 +1,5 @@
+- feature: after failing, reveal all differences (paint missed ones in red)
+- feature: give up button / next image button
+- optional different border color
+- prevent opening image in new tab
+- fix bug where the user clicks really fast and it doesn't register as a mistake

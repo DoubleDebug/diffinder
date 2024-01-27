@@ -1,0 +1,34 @@
+{
+  "id": 10,
+  "name": "Forest lake",
+  "image-left": "forest-lake-1.webp",
+  "image-right": "forest-lake-2.webp",
+  "order": 8,
+  "difficulty": "medium",
+  "differences": [
+    {
+      "x": 516,
+      "y": 1296
+    },
+    {
+      "x": 1163,
+      "y": 1858
+    },
+    {
+      "x": 592,
+      "y": 1117
+    },
+    {
+      "x": 528,
+      "y": 395
+    },
+    {
+      "x": 1011,
+      "y": 81
+    },
+    {
+      "x": 970,
+      "y": 907
+    }
+  ]
+}

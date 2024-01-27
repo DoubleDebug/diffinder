@@ -4,51 +4,30 @@ import game3 from '../../data/3-ai-robots.json';
 import game4 from '../../data/4-christmas-tree.json';
 import game5 from '../../data/5-traditional-people.json';
 import game6 from '../../data/6-dolphin.json';
-import game7 from '../../data/7-aquarium.json';
-import game8 from '../../data/8-crater.json';
-import game9 from '../../data/9-panorama-mountain.json';
-import game10 from '../../data/10-christmas-village.json';
+import game7 from '../../data/7-crater.json';
+import game8 from '../../data/8-panorama-mountain.json';
+import game9 from '../../data/9-christmas-village.json';
+import game10 from '../../data/10-forest-lake.json';
+const games = [
+  game1,
+  game2,
+  game3,
+  game4,
+  game5,
+  game6,
+  game7,
+  game8,
+  game9,
+  game10,
+];
 
 export function getGame(index: number): DifferenceMetadata {
-  switch (index) {
-    case 1:
-      return game1;
-    case 2:
-      return game2;
-    case 3:
-      return game3;
-    case 4:
-      return game4;
-    case 5:
-      return game5;
-    case 6:
-      return game6;
-    case 7:
-      return game7;
-    case 8:
-      return game8;
-    case 9:
-      return game9;
-    case 10:
-      return game10;
-    default:
-      return game1;
-  }
+  const game = games.find((g) => g.id === index);
+  if (game) return game as DifferenceMetadata;
+  return game1 as DifferenceMetadata;
 }
 
 export function getAllGames(): DifferenceMetadata[] {
-  const games = [
-    game1,
-    game2,
-    game3,
-    game4,
-    game5,
-    game6,
-    game7,
-    game8,
-    game9,
-    game10,
-  ];
   games.sort((a, b) => b.order - a.order);
-  return games;
+  return games as DifferenceMetadata[];
 }

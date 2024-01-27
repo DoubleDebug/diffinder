@@ -15,7 +15,7 @@ const CTASection = () => {
             <span>Can you spot</span>
             {isLgScreen() && <br />}
             {!isLgScreen() && <span>&nbsp;</span>}
-            <span>all 5 differences?</span>
+            <span>all 4 differences?</span>
           </h2>
           <p class="text-center lg:text-left mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">
             Take a closer look at the images and compare them.
