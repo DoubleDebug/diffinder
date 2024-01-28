@@ -5,10 +5,10 @@ type Props = {
 const ImagePreview = (props: Props) => {
   const { data } = props;
   return (
-    <div class="flex flex-none w-[calc(33%-64px)] min-w-[330px]  flex-col items-center">
+    <div class="flex flex-none w-4/5 md:w-[calc(33%-64px)] min-w-[330px]  flex-col items-center">
       <a href={`/games/${props.data.id}`} class="cursor-pointer">
         <img
-          class="object-contain h-[250px] mb-2"
+          class="object-contain xl:h-[350px] mb-2"
           src={`/images/${data['image-left']}`}
         />
       </a>

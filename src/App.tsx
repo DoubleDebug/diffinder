@@ -10,7 +10,7 @@ import CTASection from './components/sections/CTASection';
 
 function App() {
   return (
-    <div class="dark grid w-full relative min-h-[100vh]">
+    <div class="dark grid grid-rows-[min-content,auto,auto] w-full relative min-h-[100vh]">
       <Navbar />
       <DrawerHowToPlay />
       <DrawerFeedback />

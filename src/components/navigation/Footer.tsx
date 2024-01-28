@@ -3,7 +3,7 @@ const Footer = () => {
     <footer class="bg-white shadow dark:bg-gray-900">
       <div class="grid w-full mx-auto">
         <hr class="border-gray-200 w-full dark:border-gray-700" />
-        <span class="block my-4 text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span class="block my-4 text-sm text-gray-500 text-center dark:text-gray-400">
           Created by{' '}
           <a
             href="https://github.com/DoubleDebug"
