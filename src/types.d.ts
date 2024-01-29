@@ -4,6 +4,7 @@ type DifferenceMetadata = {
   'image-left': string;
   'image-right': string;
   order: number;
+  difficulty: 'easy' | 'medium' | 'hard';
   differences: Array<{
     x: number;
     y: number;
@@ -21,4 +22,9 @@ type ContactFormData = {
   name: string;
   message: string;
   rating: number;
+};
+
+type Filter = {
+  difficulty: DifferenceMetadata['difficulty'] | 'all';
+  searchQuery: string;
 };

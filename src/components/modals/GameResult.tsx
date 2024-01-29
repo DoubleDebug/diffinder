@@ -9,6 +9,7 @@ import {
   game,
   mistakesLeft,
   numOfMistakes,
+  numOfSeconds,
   resetGame,
   secondsLeft,
 } from '../../state/game';
@@ -71,8 +72,34 @@ const GameResult = () => {
             <span class="sr-only">Close modal</span>
           </button>
           <div class="p-4">
-            <div class="flex mb-8 gap-3 items-start">
-              <img src="/favicon.svg" class="h-8" alt="Flowbite Logo" />
+            <div class="flex mb-8 gap-1 items-center">
+              {differencesLeft() === 0 && (
+                <svg
+                  stroke="limegreen"
+                  fill="limegreen"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="20px"
+                  width="20px"
+                  class="mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                </svg>
+              )}
+              {differencesLeft() !== 0 && (
+                <svg
+                  stroke="red"
+                  fill="red"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="30px"
+                  width="30px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"></path>
+                </svg>
+              )}
               <h3 class="mt-[-3px] text-2xl font-medium text-gray-900 dark:text-white">
                 {differencesLeft() === 0 ? 'Game completed' : 'Game over'}
               </h3>
@@ -97,7 +124,7 @@ const GameResult = () => {
                   </span>
                 </div>
                 <span class="self-center text-2xl" title="Time elapsed">
-                  {formatSeconds(secondsLeft())}
+                  {formatSeconds(numOfSeconds() - secondsLeft())}
                 </span>
               </div>
               <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">
