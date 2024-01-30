@@ -3,7 +3,12 @@ import ImageDifference from './ImageDifference';
 import { resultModal } from '../../state/modals';
 import { createEffect, onCleanup, onMount } from 'solid-js';
 import { GameController } from '../../state/controller';
-import { differencesLeft, mistakesLeft, secondsLeft } from '../../state/game';
+import {
+  differencesLeft,
+  mistakesLeft,
+  secondsLeft,
+  setCircles,
+} from '../../state/game';
 
 type Props = {
   data: DifferenceMetadata;
@@ -19,8 +24,10 @@ const Game = (props: Props) => {
       differencesLeft() === 0 ||
       secondsLeft() === 0
     ) {
+      // game over
       resultModal()?.show();
       GameController.stopCountdown();
+      setCircles((prev) => prev.map((circle) => ({ ...circle, shown: true })));
     }
   });
 

@@ -16,6 +16,7 @@ type CircleData = {
   top: string;
   left: string;
   shown: boolean;
+  guessed: boolean;
 };
 
 type ContactFormData = {

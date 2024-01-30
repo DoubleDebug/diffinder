@@ -26,6 +26,7 @@ const SingleImage = (props: Props) => {
             shown: false,
             top: `${top - circleSize() / 2}px`,
             left: `${left - circleSize() / 2}px`,
+            guessed: false,
           };
         })
       );
@@ -49,6 +50,7 @@ const SingleImage = (props: Props) => {
     top: circle.top,
     left: circle.left,
     'border-width': circle.shown ? '3px' : '0px',
+    'border-color': circle.guessed ? 'limegreen' : 'red',
   });
 
   return (
@@ -73,7 +75,7 @@ const SingleImage = (props: Props) => {
             }
             setCircles((prev) => {
               const copy = [...prev];
-              copy[index()] = { ...circle, shown: true };
+              copy[index()] = { ...circle, shown: true, guessed: true };
               return copy;
             });
             setDifferencesLeft((prev) => prev - 1);
@@ -87,7 +89,7 @@ const SingleImage = (props: Props) => {
           const size = `${circleSize()}px` as const;
           return (
             <div
-              class={`flex w-[${size}] h-[${size}] border-2 border-white border-solid rounded-full absolute z-10`}
+              class={`flex w-[${size}] h-[${size}] border-2 border-solid rounded-full absolute z-10`}
               onClick={onClick}
               style={circleStyle(circle)}
             />

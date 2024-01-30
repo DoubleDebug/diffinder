@@ -1,6 +1,4 @@
-- feature: after failing, reveal all differences (paint missed ones in red)
 - feature: give up button / next image button
-- optional different border color
 - feature: save user's score for each image to local storage
 - prevent opening image in new tab
 - replace 2nd image with easy one; update image order to increate user engagement
