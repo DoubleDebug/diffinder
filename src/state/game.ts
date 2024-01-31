@@ -14,6 +14,7 @@ export const [differencesLeft, setDifferencesLeft] = createSignal<number>(0);
 export const [secondsLeft, setSecondsLeft] = createSignal<number>(
   numOfSeconds()
 );
+export const [userGaveUp, setUserGaveUp] = createSignal<boolean>(false);
 
 export function resetGame() {
   setMistakesLeft(numOfMistakes());
@@ -22,6 +23,7 @@ export function resetGame() {
   setCircles((circles) =>
     circles.map((circle) => ({ ...circle, shown: false }))
   );
+  setUserGaveUp(false);
 
   GameController.startCountdown();
 }

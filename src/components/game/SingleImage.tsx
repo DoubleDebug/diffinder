@@ -51,6 +51,7 @@ const SingleImage = (props: Props) => {
     left: circle.left,
     'border-width': circle.shown ? '3px' : '0px',
     'border-color': circle.guessed ? 'limegreen' : 'red',
+    animation: circle.guessed ? '' : 'pulse 1s linear infinite',
   });
 
   return (

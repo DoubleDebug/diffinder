@@ -1,6 +1,6 @@
 import GameResult from '../modals/GameResult';
 import ImageDifference from './ImageDifference';
-import { resultModal } from '../../state/modals';
+import { resultModal } from '../../state/popup';
 import { createEffect, onCleanup, onMount } from 'solid-js';
 import { GameController } from '../../state/controller';
 import {
@@ -8,6 +8,7 @@ import {
   mistakesLeft,
   secondsLeft,
   setCircles,
+  userGaveUp,
 } from '../../state/game';
 
 type Props = {
@@ -22,7 +23,8 @@ const Game = (props: Props) => {
     if (
       mistakesLeft() === 0 ||
       differencesLeft() === 0 ||
-      secondsLeft() === 0
+      secondsLeft() === 0 ||
+      userGaveUp()
     ) {
       // game over
       resultModal()?.show();

@@ -30,6 +30,10 @@ body {
   animation: spin 1s linear infinite;
 }
 
+.pulsing {
+  animation: pulse 1s linear infinite;
+}
+
 @keyframes ripple {
   to {
     scale: 4;
@@ -42,5 +46,17 @@ body {
   }
   to {
     rotate: 360deg;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
