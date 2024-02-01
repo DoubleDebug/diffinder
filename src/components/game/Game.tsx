@@ -10,6 +10,7 @@ import {
   setCircles,
   userGaveUp,
 } from '../../state/game';
+import { setScore } from '../../state/score';
 
 type Props = {
   data: DifferenceMetadata;
@@ -30,6 +31,13 @@ const Game = (props: Props) => {
       resultModal()?.show();
       GameController.stopCountdown();
       setCircles((prev) => prev.map((circle) => ({ ...circle, shown: true })));
+
+      const score = Math.floor(
+        ((props.data.differences.length - differencesLeft()) /
+          props.data.differences.length) *
+          5
+      );
+      setScore(props.data.id, score);
     }
   });
 
