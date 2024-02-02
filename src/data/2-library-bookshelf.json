@@ -1,10 +1,10 @@
 {
-  "id": 1,
+  "id": 2,
   "name": "Library bookshelf",
   "image-left": "library-bookshelf-1.webp",
   "image-right": "library-bookshelf-2.webp",
   "difficulty": "medium",
-  "order": 10,
+  "order": 5,
   "differences": [
     {
       "x": 2035,

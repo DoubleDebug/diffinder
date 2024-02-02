@@ -1,0 +1,26 @@
+{
+  "id": 12,
+  "name": "Garden girl",
+  "image-left": "garden-girl-1.webp",
+  "image-right": "garden-girl-2.webp",
+  "order": 59,
+  "difficulty": "easy",
+  "differences": [
+    {
+      "x": 970,
+      "y": 260
+    },
+    {
+      "x": 756,
+      "y": 737
+    },
+    {
+      "x": 288,
+      "y": 1031
+    },
+    {
+      "x": 189,
+      "y": 266
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "id": 5,
+  "id": 8,
   "name": "Traditional people",
   "image-left": "traditional-people-1.webp",
   "image-right": "traditional-people-2.webp",
-  "order": 50,
+  "order": 40,
   "difficulty": "medium",
   "differences": [
     {

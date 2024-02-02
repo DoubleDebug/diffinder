@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "name": "Still life",
+  "image-left": "still-life-1.webp",
+  "image-right": "still-life-2.webp",
+  "order": 50,
+  "difficulty": "easy",
+  "differences": [
+    {
+      "x": 820,
+      "y": 568
+    },
+    {
+      "x": 927,
+      "y": 753
+    },
+    {
+      "x": 360,
+      "y": 644
+    },
+    {
+      "x": 84,
+      "y": 960
+    }
+  ]
+}

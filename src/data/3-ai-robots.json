@@ -3,7 +3,7 @@
   "name": "AI Robots",
   "image-left": "ai-robots-1.webp",
   "image-right": "ai-robots-2.webp",
-  "order": 40,
+  "order": 50,
   "difficulty": "medium",
   "differences": [
     {

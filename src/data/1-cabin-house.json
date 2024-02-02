@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "name": "Cabin house",
+  "image-left": "cabin-house-1.webp",
+  "image-right": "cabin-house-2.webp",
+  "difficulty": "easy",
+  "order": 10,
+  "differences": [
+    {
+      "x": 207,
+      "y": 114
+    },
+    {
+      "x": 776,
+      "y": 453
+    },
+    {
+      "x": 544,
+      "y": 772
+    }
+  ]
+}
