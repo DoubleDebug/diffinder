@@ -1,4 +1,3 @@
-import 'flowbite';
 import { Route, Router } from '@solidjs/router';
 import GameSection from './components/sections/GameSection';
 import DrawerFeedback from './components/navigation/feedback/DrawerFeedback';

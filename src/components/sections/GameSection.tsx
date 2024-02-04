@@ -38,13 +38,12 @@ const GameSection = () => {
     <section class="bg-white dark:bg-gray-900">
       <div class="py-4 px-4 mx-auto max-w-screen-2xl lg:px-6">
         <div class="flex justify-between mb-4">
-          <div class="grid">
-            <h2 class="mb-2 text-4xl tracking-tight text-gray-900 dark:text-white">
-              Find all differences between these 2 images
+          <div class="grid items-end">
+            <h2 class="hidden sm:block mb-2 text-3xl md:text-4xl tracking-tight text-gray-900 dark:text-white">
+              {gameData.name}
             </h2>
-            <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-              Once you see a difference, click on it to see if you're correct. 3
-              mistakes and you're out!
+            <p class="hidden md:block text-gray-500 sm:text-xl dark:text-gray-400">
+              Find all differences between these 2 images
             </p>
           </div>
           <div class="grid gap-2">
@@ -57,7 +56,7 @@ const GameSection = () => {
                 data-dropdown-toggle="dropdownDots"
                 data-dropdown-placement="bottom-end"
                 data-dropdown-offset-distance="8"
-                class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex h-[40px] items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 type="button"
               >
                 <svg
@@ -105,11 +104,11 @@ const GameSection = () => {
               </ul>
             </div>
             <div class="flex gap-2 h-min self-end">
-              <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
+              <span class="whitespace-nowrap bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
                 {gameData.differences.length - differencesLeft()} /{' '}
                 {gameData.differences.length} differences
               </span>
-              <span class="bg-red-100 text-red-800 text-sm font-medium px-4 py-1 rounded dark:bg-red-900 dark:text-red-300">
+              <span class="whitespace-nowrap bg-red-100 text-red-800 text-sm font-medium px-4 py-1 rounded dark:bg-red-900 dark:text-red-300">
                 {numOfMistakes() - mistakesLeft()} / {numOfMistakes()} mistakes
               </span>
             </div>

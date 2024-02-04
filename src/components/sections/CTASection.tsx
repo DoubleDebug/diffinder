@@ -7,7 +7,10 @@ const CTASection = () => {
           src="/cursor.gif"
         />
         <div class="flex flex-col w-full text-left justify-center">
-          <h2 class="mb-6 justify-center grid sm:flex text-center sm:text-left xl:block whitespace-nowrap xl:whitespace-normal text-[2.75rem] md:text-6xl leading-[1.1] tracking-tight font-bold text-gray-900 dark:text-white">
+          <h2
+            class="mb-6 justify-center grid sm:flex text-center sm:text-left xl:block whitespace-nowrap xl:whitespace-normal text-[2.75rem] md:text-6xl leading-[1.1] tracking-tight font-bold text-gray-900 dark:text-white"
+            style={{ 'line-height': 1.3 }}
+          >
             <span>Can you spot</span>
             <br class="hidden sm:block" />
             <span class="hidden sm:block xl:hidden">&nbsp;</span>
