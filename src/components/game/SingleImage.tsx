@@ -1,4 +1,4 @@
-import { For, createMemo } from 'solid-js';
+import { For, createMemo, onMount } from 'solid-js';
 import { createRipple } from '../../utils/animations';
 import {
   setCircles,
@@ -14,9 +14,16 @@ type Props = {
 };
 
 const SingleImage = (props: Props) => {
+  let imageId = String(Math.random());
   let containerRef: HTMLDivElement | undefined = undefined;
-  const imageRef = (image: HTMLImageElement) => {
-    image.onload = () => {
+  let intervalId: any;
+  onMount(() => {
+    intervalId = setInterval(() => {
+      const image = document.getElementById(imageId) as HTMLImageElement | null;
+      if (!image) return;
+      if (image.clientWidth === 0) return;
+
+      intervalId && clearInterval(intervalId);
       setCircles(
         props.data.differences.map((diff, index) => {
           const top = diff.y * (image.clientHeight / image.naturalHeight);
@@ -30,8 +37,8 @@ const SingleImage = (props: Props) => {
           };
         })
       );
-    };
-  };
+    }, 100);
+  });
   const src = createMemo(() => {
     const side = props.left ? 'left' : 'right';
     return `/images/${props.data[`image-${side}`]}`;
@@ -61,7 +68,7 @@ const SingleImage = (props: Props) => {
       onClick={handleClick}
     >
       <img
-        ref={imageRef}
+        id={imageId}
         class="flex max-w-full"
         src={src()}
         alt={props.data.name}

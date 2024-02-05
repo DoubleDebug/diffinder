@@ -35,19 +35,19 @@ const GameSection = () => {
   });
 
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-gray-900 overflow-x-hidden">
       <div class="py-4 px-4 mx-auto max-w-screen-2xl lg:px-6">
-        <div class="flex justify-between mb-4">
-          <div class="grid items-end">
-            <h2 class="hidden sm:block mb-2 text-3xl md:text-4xl tracking-tight text-gray-900 dark:text-white">
+        <div class="flex flex-col md:flex-row justify-between mb-4">
+          <div class="grid items-end -order-2 md:-order-1">
+            <h2 class="mb-6 xs:mb-4 md:mb-2 text-center xs:text-left text-4xl md:text-3xl whitespace-nowrap tracking-tight text-gray-900 dark:text-white">
               {gameData.name}
             </h2>
             <p class="hidden md:block text-gray-500 sm:text-xl dark:text-gray-400">
               Find all differences between these 2 images
             </p>
           </div>
-          <div class="grid gap-2">
-            <div class="flex gap-4  justify-end">
+          <div class="grid gap-2 relative">
+            <div class="static xs:absolute md:static right-0 bottom-0 flex gap-4 justify-between xs:justify-end">
               <p class="text-4xl text-white text-right">
                 {formatSeconds(secondsLeft())}
               </p>
@@ -103,7 +103,7 @@ const GameSection = () => {
                 </li>
               </ul>
             </div>
-            <div class="flex gap-2 h-min self-end">
+            <div class="grid xs:flex gap-2 h-min self-end">
               <span class="whitespace-nowrap bg-blue-100 text-blue-800 text-sm font-medium px-4 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
                 {gameData.differences.length - differencesLeft()} /{' '}
                 {gameData.differences.length} differences
