@@ -37,7 +37,10 @@ const GameSection = () => {
   return (
     <section class="bg-white dark:bg-gray-900 overflow-x-hidden">
       <div class="py-4 px-4 mx-auto max-w-screen-2xl lg:px-6">
-        <div class="flex flex-col md:flex-row justify-between mb-4">
+        <div
+          id="game-info"
+          class="flex flex-col md:flex-row justify-between mb-4"
+        >
           <div class="grid items-end -order-2 md:-order-1">
             <h2 class="mb-6 xs:mb-4 md:mb-2 text-center xs:text-left text-4xl md:text-3xl whitespace-nowrap tracking-tight text-gray-900 dark:text-white">
               {gameData.name}

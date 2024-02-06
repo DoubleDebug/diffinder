@@ -2,8 +2,14 @@
 // in mobile screens
 function getSwiperOffset() {
   if (window.innerWidth >= 768) return { x: 0, y: 0 };
-  console.log('hello');
-  return { x: 30, y: 180 };
+
+  const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+  const infoHeight = document.getElementById('game-info')!.clientHeight;
+  const paddingHeight = 32;
+  const x = window.innerWidth >= 475 ? 32 : 16;
+  const y = navHeight + infoHeight + paddingHeight;
+
+  return { x, y };
 }
 
 export function createRipple(
