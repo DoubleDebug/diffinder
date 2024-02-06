@@ -50,6 +50,7 @@ const SingleImage = (props: Props) => {
       event.clientY,
       'mistake'
     );
+    setMistakesLeft((prev) => Math.max(prev - 1, 0));
   };
   const circleStyle = (circle: CircleData) => ({
     width: `${circleSize()}px`,
@@ -64,7 +65,7 @@ const SingleImage = (props: Props) => {
   return (
     <div
       ref={containerRef}
-      class="flex relative max-w-full"
+      class="flex relative max-w-full image-overlay"
       onClick={handleClick}
     >
       <img
@@ -72,7 +73,6 @@ const SingleImage = (props: Props) => {
         class="flex max-w-full"
         src={src()}
         alt={props.data.name}
-        onClick={() => setMistakesLeft((prev) => Math.max(prev - 1, 0))}
       />
       <For each={circles()}>
         {(circle, index) => {

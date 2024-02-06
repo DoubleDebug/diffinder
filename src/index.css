@@ -6,6 +6,17 @@ body {
   overflow: auto !important;
 }
 
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
 .ripple {
   position: absolute;
   display: flex;
