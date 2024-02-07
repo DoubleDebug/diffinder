@@ -7,16 +7,15 @@ import SingleImage from './SingleImage';
 import { onMount } from 'solid-js';
 
 const ImageSwiper = (data: DifferenceMetadata) => {
-  let swiper;
   onMount(
     () =>
-      (swiper = new Swiper('.swiper', {
+      new Swiper('.swiper', {
         modules: [Navigation],
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-      }))
+      })
   );
 
   return (
