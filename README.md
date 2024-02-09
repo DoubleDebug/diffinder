@@ -18,6 +18,11 @@ Diffinder is an online game where the goal is to find all differences between tw
 
 ## Image source links
 
+All images were taken from [Pixabay](https://pixabay.com).
+
+<details>
+<summary>You can check out the exact sources here.</summary>
+
 | #   | Image name         | Link                                                                        |
 | --- | ------------------ | --------------------------------------------------------------------------- |
 | 1   | Library bookshelf  | https://pixabay.com/illustrations/books-library-interior-bookshelf-8351938/ |
@@ -32,3 +37,5 @@ Diffinder is an online game where the goal is to find all differences between tw
 | 10  | Christmas village  | https://pixabay.com/illustrations/christmas-village-christmas-7636756/      |
 | 11  | Forest lake        | https://pixabay.com/illustrations/giant-water-lilies-lake-forest-7686641/   |
 | 12  | Garden girl        | https://pixabay.com/illustrations/ai-generated-little-girl-garden-7717960/  |
+
+</details>
