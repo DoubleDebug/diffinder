@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check commit message 💬
-        if: ! contains(github.event.head_commit.message, '[ci-deploy]')
+        if: '!contains(github.event.head_commit.message, ''[ci-deploy]'')'
         run: exit 1
 
       - name: Checkout 🛎️
