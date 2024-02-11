@@ -4,7 +4,7 @@ const CTASection = () => {
       <div class="grid grid-cols-1 xl:grid-cols-[auto,auto] relative gap-x-8 py-4 sm:py-8 px-4 mx-auto max-w-screen-2xl xl:px-6">
         <img
           class="absolute bottom-36 xl:bottom-1 right-36 md:right-[21rem] w-[200px] md:w-[300px]"
-          src="/diffinder/cursor.gif"
+          src="cursor.gif"
         />
         <div class="flex flex-col w-full text-left justify-center">
           <h2
@@ -26,13 +26,13 @@ const CTASection = () => {
           </p>
           <div class="hidden xl:flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
             <a
-              href="/diffinder/games/1"
+              href="games/1"
               class="min-w-[200px] inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Play now
             </a>
             <a
-              href="/diffinder/games"
+              href="games"
               class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             >
               Browse images
@@ -40,18 +40,18 @@ const CTASection = () => {
           </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
-          <img src="/diffinder/images/library-bookshelf-1.webp" />
-          <img src="/diffinder/images/library-bookshelf-2.webp" />
+          <img src="images/library-bookshelf-1.webp" />
+          <img src="images/library-bookshelf-2.webp" />
         </div>
         <div class="grid lg:flex lg:justify-end xl:hidden mt-4 gap-3 sm:flex-row">
           <a
-            href="/diffinder/games/1"
+            href="games/1"
             class="min-w-[200px] inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
           >
             Play now
           </a>
           <a
-            href="/diffinder/games"
+            href="games"
             class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
             Browse images

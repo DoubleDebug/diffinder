@@ -3,10 +3,10 @@ const Navbar = () => {
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
       <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-6 py-4">
         <a
-          href="/diffinder/"
+          href="/diffinder"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src="/diffinder/favicon.svg" class="h-8" alt="Flowbite Logo" />
+          <img src="favicon.svg" class="h-8" alt="Flowbite Logo" />
           <h1 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
             Diffinder
           </h1>
