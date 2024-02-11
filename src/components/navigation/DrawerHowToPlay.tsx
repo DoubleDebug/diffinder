@@ -66,7 +66,7 @@ const DrawerHowToPlay = () => {
       <p class="my-3 text-sm text-gray-500 dark:text-gray-400">
         If you make 3 mistakes, you're out!
       </p>
-      <img src="/how-to-play.gif" />
+      <img src="/diffinder/how-to-play.gif" />
     </div>
   );
 };

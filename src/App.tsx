@@ -15,9 +15,9 @@ function App() {
         <DrawerHowToPlay />
         <DrawerFeedback />
         <Router>
-          <Route path="/" component={CTASection} />
-          <Route path="/games" component={ImageGridSection} />
-          <Route path="/games/:id" component={GameSection} />
+          <Route path="/diffinder/" component={CTASection} />
+          <Route path="/diffinder/games" component={ImageGridSection} />
+          <Route path="/diffinder/games/:id" component={GameSection} />
         </Router>
       </div>
       <Footer />
