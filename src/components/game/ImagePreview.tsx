@@ -9,7 +9,7 @@ type Props = {
 const ImagePreview = (props: Props) => {
   const { data } = props;
   const [getIsHover, setIsHover] = createSignal(false);
-  const link = `/diffinder/games/${props.data.id}`;
+  const link = `/games/${props.data.id}`;
   const score = getScore(props.data.id);
 
   return (
@@ -21,7 +21,7 @@ const ImagePreview = (props: Props) => {
       <a class="relative" href={link}>
         <img
           class="p-6 pb-2 rounded-t-lg h-[300px] w-full object-cover"
-          src={`/diffinder/images/${data['image-left']}`}
+          src={`/images/${data['image-left']}`}
           alt={data.name}
         />
         <span
