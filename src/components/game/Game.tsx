@@ -28,7 +28,9 @@ const Game = (props: Props) => {
       userGaveUp()
     ) {
       // game over
-      resultModal()?.show();
+      if (!userGaveUp()) {
+        resultModal()?.show();
+      }
       GameController.stopCountdown();
       setCircles((prev) => prev.map((circle) => ({ ...circle, shown: true })));
 

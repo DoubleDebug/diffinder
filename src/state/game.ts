@@ -1,7 +1,7 @@
 import { createSignal } from 'solid-js';
 import { GameController } from './controller';
 
-export const [circleSize, setCircleSize] = createSignal<number>(30);
+export const [circleSize, setCircleSize] = createSignal<number>(50);
 export const [numOfMistakes, setNumOfMistakes] = createSignal<number>(3);
 export const [numOfSeconds, setNumOfSeconds] = createSignal<number>(3 * 60);
 
