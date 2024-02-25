@@ -1,6 +1,6 @@
 // takes care of the swiper component offset
 // in mobile screens
-function getSwiperOffset() {
+export function getSwiperOffset() {
   if (window.innerWidth >= 768) return { x: 0, y: 0 };
 
   const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
@@ -21,7 +21,8 @@ export function createRipple(
   const circle = document.createElement('span');
   const diameter = 50;
   const radius = diameter / 2;
-  const swiperOffset = getSwiperOffset();
+  // const swiperOffset = getSwiperOffset();
+  const swiperOffset = { x: 0, y: 0 };
 
   circle.className = `ripple ${outcome}`;
   circle.style.width = circle.style.height = `${diameter}px`;

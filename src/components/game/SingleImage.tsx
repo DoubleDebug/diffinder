@@ -44,13 +44,13 @@ const SingleImage = (props: Props) => {
     return `/images/${props.data[`image-${side}`]}`;
   });
   const handleClick = (event: MouseEvent) => {
+    setMistakesLeft((prev) => Math.max(prev - 1, 0));
     createRipple(
       event.currentTarget as HTMLDivElement,
       event.clientX,
       event.clientY,
       'mistake'
     );
-    setMistakesLeft((prev) => Math.max(prev - 1, 0));
   };
   const circleStyle = (circle: CircleData) => ({
     width: `${circleSize()}px`,
@@ -65,7 +65,7 @@ const SingleImage = (props: Props) => {
   return (
     <div
       ref={containerRef}
-      class="flex relative max-w-full image-overlay"
+      class="flex relative max-w-full"
       onClick={handleClick}
     >
       <img

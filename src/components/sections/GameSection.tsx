@@ -4,13 +4,13 @@ import { useParams } from '@solidjs/router';
 import { getGame } from '../game/GameLibrary';
 import { formatSeconds } from '../../utils/time';
 import {
-  setDifferencesLeft,
   differencesLeft,
   mistakesLeft,
   setGame,
   secondsLeft,
   numOfMistakes,
   setUserGaveUp,
+  resetGame,
 } from '../../state/game';
 import { Dropdown } from 'flowbite';
 import { optionsDropdown, setOptionsDropdown } from '../../state/popup';
@@ -21,7 +21,7 @@ const GameSection = () => {
 
   onMount(() => {
     setGame(gameData);
-    setDifferencesLeft(gameData.differences.length);
+    resetGame();
     setOptionsDropdown(
       new Dropdown(
         document.getElementById('dropdownDots'),
